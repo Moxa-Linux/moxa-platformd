@@ -1,0 +1,5 @@
+moxa-platformd (1.0.0) stretch; urgency=medium
+
+  * Initial release.
+
+ -- Ken CJ Chou <KenCJ.Chou@moxa.com>  Fri, 20 Mar 2020 15:48:41 +0800

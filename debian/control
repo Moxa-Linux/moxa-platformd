@@ -1,0 +1,12 @@
+Source: moxa-platformd
+Section: admin
+Priority: optional
+Maintainer: Ken CJ Chou <KenCJ.Chou@moxa.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: http://www.moxa.com/
+
+Package: mxp-common-udev-rules
+Architecture: all
+Depends: ${misc:Depends}
+Description: Some common udev rules for Moxa platform.
