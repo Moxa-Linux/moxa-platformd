@@ -1,0 +1,41 @@
+variables:
+    GIT_DEPTH: "1"
+
+stages:
+    - develop_build
+    - prepare_develop_debs
+
+develop_build:
+    tags:
+        - Runner-Stretch
+    stage: develop_build
+    script:
+        - echo "deb http://mil-internal-apt:8080/mirror-debian_20190701/ stretch main contrib non-free" > /etc/apt/sources.list
+        - curl -fsSL http://mil-internal-apt:8080/mil_internal_apt.gpg | apt-key add -
+        - apt-get update
+        - apt-get install devscripts -y --allow-unauthenticated
+        - dpkg-buildpackage -us -uc -b
+        - mv ../*.buildinfo .
+        - mv ../*.changes .
+        - mv ../*.deb .
+    artifacts:
+        name: "${CI_PROJECT_NAME}"
+        paths:
+        - ./*.buildinfo
+        - ./*.changes
+        - ./*.deb
+
+prepare_develop_debs:
+    tags:
+        - Runner-Stretch
+    stage: prepare_develop_debs
+    only:
+      refs:
+        - stretch/master
+    dependencies:
+        - develop_build
+    when: manual
+    script:
+        - mkdir -p /cache/stretch/develop/
+        - cp *.deb /cache/stretch/develop/
+        - ls /cache/stretch/develop/
