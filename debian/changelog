@@ -1,3 +1,9 @@
+moxa-platformd (1.0.1) stretch; urgency=medium
+
+  * feat: Add udev rule for mPcie devices
+
+ -- Alif Chen <alif.chen@moxa.com>  Sat, 28 Mar 2020 13:14:02 +0800
+
 moxa-platformd (1.0.0) stretch; urgency=medium
 
   * Initial release.
