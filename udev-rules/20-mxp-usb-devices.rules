@@ -10,6 +10,10 @@ ATTRS{idVendor}=="0cf3", ATTRS{idProduct}=="9378", \
 ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="b82c", \
 	ENV{MXP_USB_DEVICE_NAME}="jjPlus WMU6202", ENV{MXP_USB_WIFI_DEVICE}="1"
 
+# Quectel
+ATTRS{idVendor}=="2c7c", ATTRS{idProduct}=="0125", \
+	ENV{MXP_USB_DEVICE_NAME}="Quectel EC20", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+
 # Yuga
 ATTRS{idVendor}=="05c6", ATTRS{idProduct}=="9625", \
 	ENV{MXP_USB_DEVICE_NAME}="Yuga CLM920-NC5", ENV{MXP_USB_CELLULAR_DEVICE}="1"
@@ -39,6 +43,18 @@ ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C1-NF",
 	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C1-NF", ENV{MXP_USB_CELLULAR_DEVICE}="1"
 ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C1-NS", \
 	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C1-NS", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C1-EU", \
+	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C1-EU", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C1-AP", \
+	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C1-AP", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C4-NF", \
+	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C4-NF", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C4-NS", \
+	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C4-NS", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C4-EU", \
+	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C4-EU", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C4-AP", \
+	ENV{MXP_USB_DEVICE_NAME}="Telit LE910C4-AP", ENV{MXP_USB_CELLULAR_DEVICE}="1"
 
 # u-blox
 ATTRS{idVendor}=="1546", ATTRS{idProduct}=="01a8", \
