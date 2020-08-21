@@ -37,6 +37,8 @@ ATTRS{idVendor}=="1199", ATTRS{idProduct}=="68c0", ATTRS{product}=="Sierra Wirel
 	ENV{MXP_USB_DEVICE_NAME}="Sierra Wireless WP7609", ENV{MXP_USB_CELLULAR_DEVICE}="1"
 ATTRS{idVendor}=="1199", ATTRS{idProduct}=="68c0", ATTRS{product}=="Sierra Wireless WP7610" \
 	ENV{MXP_USB_DEVICE_NAME}="Sierra Wireless WP7610", ENV{MXP_USB_CELLULAR_DEVICE}="1"
+ATTRS{idVendor}=="1199", ATTRS{idProduct}=="9071" \
+	ENV{MXP_USB_DEVICE_NAME}="Sierra Wireless MC7430/MC7455", ENV{MXP_USB_CELLULAR_DEVICE}="1"
 
 # Telit
 ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", ATTRS{product}=="LE910C1-NF", \

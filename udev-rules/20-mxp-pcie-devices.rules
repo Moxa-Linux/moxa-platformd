@@ -8,5 +8,7 @@ ATTRS{vendor}=="0x168c", ATTRS{device}=="0x0033", \
 # jjPlus
 ATTRS{vendor}=="0x168c", ATTRS{device}=="0x003e", \
 	ENV{MXP_PCIE_DEVICE_NAME}="QCA6174 Network controller", ENV{MXP_PCIE_WIFI_DEVICE}="1"
+ATTRS{vendor}=="0x168c", ATTRS{device}=="0x003c", \
+	ENV{MXP_PCIE_DEVICE_NAME}="QCA988X Network controller", ENV{MXP_PCIE_WIFI_DEVICE}="1"
 
 LABEL="mxp_pcie_devices_rules_end"
