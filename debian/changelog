@@ -1,3 +1,10 @@
+moxa-platformd (1.0.3) stretch; urgency=medium
+
+  * feat: add pcie devices QCA988X
+  * feat: add USB devices Sierra MC7430/MC7455
+
+ -- Alif Chen <alif.chen@moxa.com>  Fri, 21 Aug 2020 18:59:16 +0800
+
 moxa-platformd (1.0.2) stretch; urgency=medium
 
   * feat: add USB device "Quectel EC20"
